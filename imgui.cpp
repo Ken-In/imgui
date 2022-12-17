@@ -4520,6 +4520,7 @@ void ImGui::NewFrame()
     // Mouse wheel scrolling, scale
     UpdateMouseWheel();
 
+
     // Mark all windows as not visible and compact unused memory.
     IM_ASSERT(g.WindowsFocusOrder.Size <= g.Windows.Size);
     const float memory_compact_start_time = (g.GcCompactAll || g.IO.ConfigMemoryCompactTimer < 0.0f) ? FLT_MAX : (float)g.Time - g.IO.ConfigMemoryCompactTimer;
